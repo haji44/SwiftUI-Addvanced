@@ -32,7 +32,7 @@ struct HomeView: View {
             } //: HERDER
             
             // MARK: CENTER
-            Text("The time taht leads to mastery is dependent on the intensity of our focus")
+            Text("The time that leads to mastery is dependent on the intensity of our focus")
                 .font(.title3)
                 .fontWeight(.light)
                 .foregroundColor(.secondary)
