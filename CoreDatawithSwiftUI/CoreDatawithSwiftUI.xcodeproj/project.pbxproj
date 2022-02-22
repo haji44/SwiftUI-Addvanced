@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		204C698827C4170E006D1424 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 204C698727C4170E006D1424 /* CloudKit.framework */; };
+		204C698A27C41841006D1424 /* TestAccessCoud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204C698927C41841006D1424 /* TestAccessCoud.swift */; };
 		2054C6B527C15C8E00523712 /* CoreDatawithSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2054C6B427C15C8E00523712 /* CoreDatawithSwiftUIApp.swift */; };
 		2054C6B727C15C8E00523712 /* ToDoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2054C6B627C15C8E00523712 /* ToDoListView.swift */; };
 		2054C6B927C15C8F00523712 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2054C6B827C15C8F00523712 /* Assets.xcassets */; };
@@ -20,6 +22,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		204C698527C4170A006D1424 /* CoreDatawithSwiftUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CoreDatawithSwiftUI.entitlements; sourceTree = "<group>"; };
+		204C698727C4170E006D1424 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		204C698927C41841006D1424 /* TestAccessCoud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAccessCoud.swift; sourceTree = "<group>"; };
 		2054C6B127C15C8E00523712 /* CoreDatawithSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDatawithSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2054C6B427C15C8E00523712 /* CoreDatawithSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDatawithSwiftUIApp.swift; sourceTree = "<group>"; };
 		2054C6B627C15C8E00523712 /* ToDoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListView.swift; sourceTree = "<group>"; };
@@ -38,17 +43,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				204C698827C4170E006D1424 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		204C698627C4170E006D1424 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				204C698727C4170E006D1424 /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2054C6A827C15C8E00523712 = {
 			isa = PBXGroup;
 			children = (
 				2054C6B327C15C8E00523712 /* CoreDatawithSwiftUI */,
 				2054C6B227C15C8E00523712 /* Products */,
+				204C698627C4170E006D1424 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +78,7 @@
 		2054C6B327C15C8E00523712 /* CoreDatawithSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				204C698527C4170A006D1424 /* CoreDatawithSwiftUI.entitlements */,
 				2054C6C627C1613900523712 /* Model */,
 				2054C6C227C15CA100523712 /* Views */,
 				2054C6B427C15C8E00523712 /* CoreDatawithSwiftUIApp.swift */,
@@ -113,6 +129,7 @@
 			children = (
 				2054C6B627C15C8E00523712 /* ToDoListView.swift */,
 				2054C6C927C1E14F00523712 /* ItemDetailView.swift */,
+				204C698927C41841006D1424 /* TestAccessCoud.swift */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -200,6 +217,7 @@
 				2054C6B727C15C8E00523712 /* ToDoListView.swift in Sources */,
 				2054C6D227C1ED0800523712 /* ItemCell.swift in Sources */,
 				2054C6CD27C1E36C00523712 /* ItemButton.swift in Sources */,
+				204C698A27C41841006D1424 /* TestAccessCoud.swift in Sources */,
 				208B069827C2A28700E5B347 /* DataController.swift in Sources */,
 				2054C6C827C1614500523712 /* Item.swift in Sources */,
 				2054C6B527C15C8E00523712 /* CoreDatawithSwiftUIApp.swift in Sources */,
@@ -330,6 +348,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CoreDatawithSwiftUI/CoreDatawithSwiftUI.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CoreDatawithSwiftUI/Preview Content\"";
@@ -359,6 +378,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CoreDatawithSwiftUI/CoreDatawithSwiftUI.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CoreDatawithSwiftUI/Preview Content\"";

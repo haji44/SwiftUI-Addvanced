@@ -7,9 +7,11 @@
 
 import Foundation
 import CoreData
-
+import CloudKit
 
 class DataController: ObservableObject {
+    static let shared = DataController()
+    
     let container = NSPersistentContainer(name: "TodoItem") // name must be identical to core data model
     
     init() {
